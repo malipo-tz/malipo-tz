@@ -1,0 +1,45 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: white;
+    width: 95%;
+    margin: 16px auto;
+    padding: 12px;
+}
+
+.huduma {
+    display: flex;
+    justify-content: space-around;
+}
+
+.huduma .mpesa, .huduma .tigo {
+    height: 200px;
+    width: 150px;
+    box-shadow: 4px 4px 4px black;
+    cursor: pointer;
+}
+
+.huduma img {
+    height: 150px;
+    width: 150px;
+}
+
+@media (min-width: 600px) {
+    .huduma .mpesa, .huduma .tigo {
+        height: 300px;
+        width: 225px;
+        box-shadow: 8px 8px 8px black;
+    }
+    .huduma img {
+        height: 225px;
+        width: 225px;
+    }
+
+}

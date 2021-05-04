@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="makato ya m-pesa, kutuma na kutoa m-pesa, makato ya kutoa-mpesa">
+    <meta name="description" content="Makato ya kutuma na kutoa pesa M-Pesa">
+    <title>Makato ya M-Pesa</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/mpesa.css">
+    <script src="scripts/mpesa-tuma.js" defer></script>
+    <script src="scripts/mpesa-toa.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 onclick="header()">MalipoTZ</h1>
+    </header>
+    <div class="container">
+        Chagua kati ya kutuma/kutoa na ingiza kiasi cha pesa unachotaka kutuma au kutoa ili kujua makato ya muhamala husika.
+        <div class="tuto">
+            <section class="tuma chagua">KUTUMA</section>
+            <section class="toa rangi">KUTOA</section>
+        </div>
+
+        <div class="container2">
+            <div class="input inputTuma">
+                <input type="number" id="kiasiTuma" oninput="ingizaTuma()" placeholder="Weka kiasi unachotaka Tuma hapa... mfano: 22400"> <br>
+                <sup id="makosaTuma"></sup>
+            </div>
+            <div class="input inputToa">
+                <input type="number" id="kiasiToa" oninput="ingizaToa()" placeholder="Weka kiasi unachotaka Toa hapa... mfano: 15300">
+                <br>
+                <sup id="makosaToa"></sup>
+            </div>
+             <br>
+            <div class="maelezo">
+                <ul>
+                    <li>Kiasi unachotuma: <span id="kiasi">0</span></li>
+                    <li>Makato <i>(M-Pesa to M-Pesa)</i>: <span id="makatoMpesa">0</span></li>
+                    <li>Makato <i>(M-Pesa to Mitandao mingine)</i>: <span id="makatoMingine">0</span></li>
+                </ul>
+                <p id="tumaMp">Utahitajika kuwa na pesa kwenye M-Pesa yako, kiasi kisichopungua <span id="kisichopunguaMpesa"></span> ili kuweza kutuma <span id="salio1"></span> kwenda M-Pesa</p> 
+
+                <p id="tumaMin">Utahitajika kuwa na pesa kwenye M-Pesa yako, kiasi kisichopungua <span id="kisichopunguaMingine"></span> ili kuweza kutuma <span id="salio2"></span> kwenda mitandao mingine</p>
+            </div>
+
+            <div class="maelezoToa">
+                <ul>
+                    <li>Kiasi unachotoa: <span id="kiasiChaKuToa">0</span></li>
+                    <li>Makato: <span id="makatoYaKutoa">0</span></li>
+                </ul>
+                <p >Utahitajika kuwa na pesa kwenye M-Pesa yako, kiasi kisichopungua <span id="kisichopungua2"></span> ili kuweza kutoa <span id="salioWezeshi"></span></p> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function header(){
+            window.location = '/'
+        }
+    </script>
+</body>
+</html>
